@@ -30,3 +30,23 @@ python graphcut_core.py
 python interactive_tool.py dataset/images/scissors.jpg
 ```
 
+## Result screenshots
+
+![interactive-graph-cut-segmentation result screenshot](docs/results/result-screenshot.png)
+
+Foreground extraction examples from scribble-based graph-cut segmentation.
+
+
+## What this demonstrates
+
+- Interactive segmentation with graph construction, seed labels, and min-cut optimization.
+- Comparison between histogram and GMM color models.
+- Reusable core logic plus a lightweight interactive tool entry point.
+
+
+## Limitations and next steps
+
+- Segmentation quality depends heavily on scribble quality and color separability.
+- The GUI path is intentionally lightweight rather than a polished annotation product.
+- Next steps: add quantitative IoU summaries and a batch evaluation script.
+
